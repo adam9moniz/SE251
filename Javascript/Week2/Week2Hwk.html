@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Homework</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+    
+</body>
+
+<script type="text/javascript">
+	var Characters = [
+	{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+	{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street"},	
+	{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit"},	
+	{first:"Kevin", last:"McCallister", credit:"Home Alone"},	
+	{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla"},	
+	{first:"Buzz", last:"Lightyear", credit:"Toy Story"},
+	{first:"Marion", last:"Cobretti", credit:"Cobra"},	
+	]
+
+
+	var string = "";
+	var body = document.querySelector("Body")
+	
+	<!-- for(var row = 0;row < Characters.length;row++){ -->
+	
+		<!-- var fakeDiv = document.createElement("Div"); -->
+		<!-- fakeDiv.setAttribute("class", "border"); -->
+
+		
+			<!-- for(column in Characters[row]){ -->
+			
+				<!-- var load = document.createElement("p"); -->
+				<!-- var textLoad = document.createTextNode(Characters[row][column]); -->
+				<!-- load.appendChild(textLoad); -->
+				<!-- fakeDiv.appendChild(load); -->
+			<!-- } -->
+			
+			<!-- body.appendChild(fakeDiv); -->
+	
+	
+	
+	<!-- } -->
+
+
+
+
+
+	for(var row = 0; row< Characters.length;row++){
+	
+	
+	
+		string += "<div id='" +row+"' class='border'>";
+		for(column in Characters [row]){
+		string += "<p>";
+		string += Characters[row][column];
+		string += "<p>";
+			}
+	
+		string += "<div>";
+	}
+		body.innerHTML = string;
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+</script>
+
+</html>

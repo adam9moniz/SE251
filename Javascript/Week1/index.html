@@ -1,0 +1,101 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>Level 0 Boss Challenge</title>
+<meta charset="UTF-8">
+  <meta name="description" content="Level 0">
+  <meta name="keywords" content="Level 0, Game Prototyping, New England Institute of Technology">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+ <script type="text/javascript">
+ 
+ //ALERTT! Window pop up!!
+alert("Hello world!");
+
+
+var a = ("a string")
+	console.log("a: " + a);
+
+var b = ("a number")
+	console.log("b: " + b);
+
+var c = ("a boolean")
+	console.log("c: " + c)
+
+console.log(" ")
+
+console.log("5 + 2 = " + addingnumbers(5,2));
+
+
+console.log(" ")
+
+
+
+
+
+//Lists between 1 to 100;
+<!-- for(var i = 1;i <= 100;i++){ -->
+		<!-- if(i%6 == 0){ -->
+			<!-- console.log("fizz buzz");} -->
+		<!-- if(i%2 ==0){ -->
+			<!-- console.log("fizz");} -->
+		<!-- else if(i%3==0){ -->
+			<!-- console.log("buzz");} -->
+
+		<!-- else{ -->
+		<!-- console.log(i)}; -->
+	<!-- } -->
+
+	
+var myArray = new Array()
+
+ for(var i = 0; i < 100; i ++){ 
+	 stack = i+1; 
+	  if(stack%2 ==0 && stack%3==0){  
+		  var myObject = {index:stack,label:"fizzbuzz"};}  
+	  else if(stack%2 ==0){ 
+		 var myObject = {index:stack,label:"fizz"};} 
+	  else if(stack%3 ==0){  
+		  var myObject = {index:stack,label:"buzz"};}  
+	  else{  
+		  var myObject = {index:stack,label:"Undefined"};  
+	 } 
+	 myArray.push(myObject); 
+	 } 
+	
+
+	
+console.log(myArray);
+	
+	
+for(var i =0;i < myArray.length;i++){
+		for(value in myArray[i]){
+		console.log(myArray[i][value])
+	}
+
+}	
+	
+	
+	
+//funtions below 
+
+function addingnumbers(num1, num2){
+
+	answer = (num1 + num2)
+	
+
+
+	return answer
+}
+
+</script> 
+  
+  
+  
+</head>
+<body>
+
+<p>Adam M Moniz</p>
+</body>
+</html>
